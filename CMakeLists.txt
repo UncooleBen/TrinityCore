@@ -30,6 +30,13 @@ if(POLICY CMP0074)
   cmake_policy(SET CMP0074 NEW) # find_package() uses <PackageName>_ROOT variables
 endif()
 
+######
+set(OPENSSL_ROOT_DIR "/opt/homebrew/Cellar/openssl@1.1/1.1.1m/")
+set(READLINE_ROOT_DIR "/opt/homebrew/Cellar/readline/8.1.2/")
+set(READLINE_LIBRARY "/opt/homebrew/Cellar/readline/8.1.2/lib/libreadline.8.1.dylib")
+set(READLINE_INCLUDE_DIR "/opt/homebrew/Cellar/readline/8.1.2/include")
+
+
 # Set RPATH-handing (CMake parameters)
 set(CMAKE_SKIP_BUILD_RPATH 0)
 set(CMAKE_BUILD_WITH_INSTALL_RPATH 0)

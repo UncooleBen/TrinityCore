@@ -36,6 +36,8 @@
 #   include <unistd.h>
 #   define _getcwd getcwd
 #   define _stat stat
+#   define stat64 stat
+#   define fstat64 fstat
 #   define stricmp strcasecmp 
 #   define strnicmp strncasecmp 
 #endif
